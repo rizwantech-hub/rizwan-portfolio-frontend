@@ -1,0 +1,297 @@
+import ProfileImage from "../assets/images/Rizwan-Ataye.png";
+import ApiProjectImage from "../assets/images/ApiTesterForWeb.png";
+import AuthProjectImage from "../assets/images/Auth.png";
+import StoreProjectImage from "../assets/images/ecom.jpg";
+import AgricultureMobileImage from "../assets/images/mobail app Agriculture.webp";
+import CodeAlphaCertificate from "../assets/certificates/CodeAlpha Certificate of Completion.png";
+import HackerRankReactCertificate from "../assets/certificates/Minimal HackerRank-Style Achievement Certificate.png";
+import HackerRankJavaScriptCertificate from "../assets/certificates/Rizwan Ataye HackerRank Certificate.png";
+
+// Add project screenshots in src/assets/projects/ and import them here.
+// Add certificate images in src/assets/certificates/ and import them here.
+
+const iconBase = "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons";
+const githubUrl = "https://github.com/rizwantech-hub";
+
+const skillIconMap = {
+  HTML: `${iconBase}/html5/html5-original.svg`,
+  CSS: `${iconBase}/css3/css3-original.svg`,
+  "Tailwind CSS": `${iconBase}/tailwindcss/tailwindcss-original.svg`,
+  JavaScript: `${iconBase}/javascript/javascript-original.svg`,
+  React: `${iconBase}/react/react-original.svg`,
+  Bootstrap: `${iconBase}/bootstrap/bootstrap-original.svg`,
+  Blazor: `${iconBase}/blazor/blazor-original.svg`,
+  PHP: `${iconBase}/php/php-original.svg`,
+  Laravel: `${iconBase}/laravel/laravel-original.svg`,
+  "Node.js": `${iconBase}/nodejs/nodejs-original.svg`,
+  "Express.js": `${iconBase}/express/express-original.svg`,
+  "REST API": `${iconBase}/fastapi/fastapi-original.svg`,
+  Flutter: `${iconBase}/flutter/flutter-original.svg`,
+  Dart: `${iconBase}/dart/dart-original.svg`,
+  Python: `${iconBase}/python/python-original.svg`,
+  MySQL: `${iconBase}/mysql/mysql-original.svg`,
+  Oracle: `${iconBase}/oracle/oracle-original.svg`,
+  MongoDB: `${iconBase}/mongodb/mongodb-original.svg`,
+  Firebase: `${iconBase}/firebase/firebase-original.svg`,
+  Git: `${iconBase}/git/git-original.svg`,
+  GitHub: `${iconBase}/github/github-original.svg`,
+  Docker: `${iconBase}/docker/docker-original.svg`,
+  "VS Code": `${iconBase}/vscode/vscode-original.svg`,
+  Linux: `${iconBase}/linux/linux-original.svg`,
+};
+
+const skillDetails = {
+  HTML: { level: 90, description: "Semantic HTML, accessibility" },
+  CSS: { level: 88, description: "Responsive layouts, animations" },
+  "Tailwind CSS": { level: 85, description: "Utility-first CSS" },
+  JavaScript: { level: 90, description: "ES6+, DOM, async code" },
+  React: { level: 88, description: "Components, hooks, UI development" },
+  Bootstrap: { level: 82, description: "Responsive design" },
+  Blazor: { level: 65, description: "Component-based web UI" },
+  PHP: { level: 75, description: "Server-side web development" },
+  Laravel: { level: 78, description: "MVC, routing, APIs" },
+  "Node.js": { level: 80, description: "Backend runtime" },
+  "Express.js": { level: 78, description: "Routing, middleware, APIs" },
+  "REST API": { level: 84, description: "API design and integration" },
+  Flutter: { level: 82, description: "Cross-platform mobile apps" },
+  Dart: { level: 80, description: "Flutter application logic" },
+  Python: { level: 75, description: "Programming and scripting" },
+  MySQL: { level: 82, description: "Queries and relationships" },
+  Oracle: { level: 70, description: "Relational database systems" },
+  MongoDB: { level: 78, description: "Document database design" },
+  Firebase: { level: 76, description: "Auth, database, app services" },
+  Git: { level: 85, description: "Version control" },
+  GitHub: { level: 84, description: "Repositories and collaboration" },
+  Docker: { level: 70, description: "Containers and deployment" },
+  "VS Code": { level: 90, description: "Development environment" },
+  Linux: { level: 75, description: "Command line, Bash" },
+};
+
+const skillItems = (items) =>
+  items.map((name) => ({
+    name,
+    icon: skillIconMap[name],
+    level: skillDetails[name]?.level || 70,
+    description: skillDetails[name]?.description || "Practical development experience",
+  }));
+
+export const PortfolioContent = {
+  profile: {
+    name: "Rizwan Ataye",
+    location: "Maidan Wardak, Afghanistan",
+    university: "Kabul University",
+    faculty: "Computer Science Faculty",
+    field: "Information Systems",
+    title: "Full-Stack Web Developer & Mobile Developer",
+    image: ProfileImage,
+    logo: "/mylogo.png",
+    cv: "/cv/Rizwan_Ataye_CV.pdf",
+  },
+  hero: {
+    badge: "Web & Mobile Development",
+    greeting: "Hey, I'm",
+    name: "Rizwan",
+    title: "Full-Stack Web Developer & Mobile Developer",
+    description:
+      "I build modern web and mobile applications with clean interfaces, reliable backends, REST APIs, and database solutions.",
+    buttons: { primary: "Download CV", secondary: "View Projects" },
+    stats: [
+      { number: "3+", label: "Years Experience" },
+      { number: "20+", label: "Projects Done" },
+      { number: "12+", label: "Tech Stack" },
+      { number: "400+", label: "Commits" },
+    ],
+    technologies: ["React", "Laravel", "PHP", "Flutter", "Dart", "REST API", "Python", "MySQL", "Oracle", "MongoDB"],
+    avatar: ProfileImage,
+  },
+  about: {
+    tag: "About Me",
+    title: "Building useful",
+    titleHighlight: "digital products",
+    paragraphs: [
+      "I'm Rizwan Ataye from Maidan Wardak, Afghanistan, studying Computer Science at Kabul University in the Information Systems field.",
+      "My work focuses on full-stack web development, mobile development, REST APIs, databases, and practical software systems that solve real problems.",
+    ],
+    stats: [],
+    skills: [],
+  },
+  skills: {
+    tag: "Expertise",
+    title: "My",
+    titleHighlight: "Skills",
+    description: "Technologies I work with across web, mobile, backend, databases, and development tools.",
+    categories: [
+      { id: "all", label: "All Skills" },
+      { id: "frontend", label: "Frontend" },
+      { id: "backend", label: "Backend" },
+      { id: "mobile", label: "Mobile" },
+      { id: "programming", label: "Programming" },
+      { id: "database", label: "Databases" },
+      { id: "tools", label: "Tools" },
+    ],
+    skills: {
+      frontend: skillItems(["HTML", "CSS", "Tailwind CSS", "JavaScript", "React", "Bootstrap", "Blazor"]),
+      backend: skillItems(["PHP", "Laravel", "Node.js", "Express.js", "REST API"]),
+      mobile: skillItems(["Flutter", "Dart"]),
+      programming: skillItems(["Python"]),
+      database: skillItems(["MySQL", "Oracle", "MongoDB", "Firebase"]),
+      tools: skillItems(["Git", "GitHub", "Docker", "VS Code", "Linux"]),
+    },
+    summary: [],
+  },
+  projects: {
+    tag: "Portfolio",
+    title: "Featured",
+    titleHighlight: "Projects",
+    description: "Here are selected project areas that match my web, full-stack, API, and mobile development direction.",
+    categories: [
+      { id: "all", label: "All Projects" },
+      { id: "frontend", label: "Frontend" },
+      { id: "fullstack", label: "Full Stack" },
+      { id: "mobile", label: "Mobile" },
+      { id: "others", label: "Others" },
+    ],
+    items: [
+      {
+        id: "api-testing-project",
+        title: "API Testing Project",
+        description: "A web project focused on REST API requests, response handling, and a clear testing workflow.",
+        image: ApiProjectImage,
+        imageAlt: "Rizwan Ataye API testing web project preview",
+        placeholderLabel: "API Project Screenshot",
+        category: "fullstack",
+        tags: ["React", "Node.js", "Express.js", "REST API"],
+        liveUrl: "",
+        githubUrl,
+      },
+      {
+        id: "authentication-system",
+        title: "Authentication System",
+        description: "A full-stack authentication system with secure login flow, backend APIs, and database support.",
+        image: AuthProjectImage,
+        imageAlt: "Rizwan Ataye full-stack authentication system preview",
+        placeholderLabel: "Authentication System Screenshot",
+        category: "fullstack",
+        tags: ["React", "Node.js", "MongoDB", "JWT"],
+        liveUrl: "",
+        githubUrl,
+      },
+      {
+        id: "online-store-frontend",
+        title: "Online Store Frontend",
+        description: "A responsive storefront interface for browsing products, viewing details, and presenting e-commerce content.",
+        image: StoreProjectImage,
+        imageAlt: "Rizwan Ataye responsive online store frontend preview",
+        placeholderLabel: "Online Store Screenshot",
+        category: "frontend",
+        tags: ["React", "CSS", "Bootstrap", "Responsive"],
+        liveUrl: "",
+        githubUrl,
+      },
+      {
+        id: "agriculture-mobile-app",
+        title: "Agriculture Mobile App",
+        description: "A mobile application concept for smart farming, field information, crop views, and agriculture-focused user experience.",
+        image: AgricultureMobileImage,
+        imageAlt: "Rizwan Ataye agriculture mobile application preview",
+        placeholderLabel: "Agriculture Mobile App Screenshot",
+        category: "mobile",
+        tags: ["Flutter", "Dart", "Mobile UI", "Agriculture"],
+        liveUrl: "",
+        githubUrl,
+      },
+    ],
+  },
+  contact: {
+    tag: "Contact",
+    title: "Let's work",
+    titleHighlight: "together",
+    description: "Have a project in mind? Let's discuss how we can bring it to life. I'm always open to new opportunities and collaborations.",
+    apiEndpoint: "/api/contact",
+    info: [
+      { icon: "location", title: "Location", value: "Kabul, Afghanistan" },
+      { icon: "availability", title: "Availability", value: "Open to work" },
+    ],
+    email: "",
+    social: [
+      { name: "GitHub", url: githubUrl, icon: "https://cdn.simpleicons.org/github/ba80ff" },
+    ],
+    form: {
+      namePlaceholder: "Your name",
+      emailPlaceholder: "your@email.com",
+      subjectPlaceholder: "Project subject",
+      messagePlaceholder: "Tell me about your project...",
+      submitText: "Send Message",
+    },
+  },
+  certifications: {
+    tag: "Credentials",
+    title: "My ",
+    titleHighlight: "Certifications",
+    description: "A showcase of my completed certificates and professional learning progress.",
+    items: [
+      {
+        id: "codealpha-full-stack-development",
+        title: "Full Stack Development Virtual Internship",
+        issuer: "CodeAlpha",
+        date: "20 Sep, 2026",
+        description: "Certificate of completion for the CodeAlpha Virtual Internship Program in Full Stack Development.",
+        image: CodeAlphaCertificate,
+        imageAlt: "Rizwan Ataye CodeAlpha Full Stack Development certificate",
+        link: "",
+        isPlaceholder: false,
+      },
+      {
+        id: "hackerrank-frontend-developer-react",
+        title: "Frontend Developer (React)",
+        issuer: "HackerRank",
+        date: "11 Sep, 2026",
+        description: "Certificate of accomplishment for passing the HackerRank Frontend Developer React role certification test.",
+        image: HackerRankReactCertificate,
+        imageAlt: "Rizwan Ataye HackerRank Frontend Developer React certificate",
+        link: "",
+        isPlaceholder: false,
+      },
+      {
+        id: "hackerrank-javascript-basic",
+        title: "JavaScript (Basic)",
+        issuer: "HackerRank",
+        date: "29 Jun, 2026",
+        description: "Certificate of accomplishment for passing the HackerRank JavaScript Basic skill certification test.",
+        image: HackerRankJavaScriptCertificate,
+        imageAlt: "Rizwan Ataye HackerRank JavaScript Basic certificate",
+        link: "",
+        isPlaceholder: false,
+      },
+    ],
+  },
+  footer: {
+    brand: "ATAYE",
+    text: "Full-Stack Web Developer & Mobile Developer",
+    links: [
+      { label: "Home", href: "#home" },
+      { label: "About", href: "#about" },
+      { label: "Skills", href: "#skills" },
+      { label: "Projects", href: "#projects" },
+      { label: "Certifications", href: "#certifications" },
+      { label: "Contact", href: "#contact" },
+    ],
+    copyright: "All rights reserved.",
+    heart: "",
+  },
+  navbar: {
+    brand: "Ataye",
+    logo: "/mylogo.png",
+    links: [
+      { label: "Home", href: "#home" },
+      { label: "About", href: "#about" },
+      { label: "Skills", href: "#skills" },
+      { label: "Projects", href: "#projects" },
+      { label: "Certifications", href: "#certifications" },
+      { label: "Contact", href: "#contact" },
+    ],
+    cta: "Contact",
+  },
+};
+
+export default PortfolioContent;
